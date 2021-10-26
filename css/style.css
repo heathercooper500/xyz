@@ -26,7 +26,7 @@ a:hover {
 h1, h2, h3, h4, h5, h6 {
   font-family: "Raleway", sans-serif;
     margin: 20x 20px 1em 0px;
-    color: #076d6f;
+    color: #1a6394;
     font-size: 1.7em;
     font-weight: bold;
   }
@@ -670,6 +670,8 @@ section {
 /*--------------------------------------------------------------
 # Resume
 --------------------------------------------------------------*/
+
+
 .resume .resume-title {
   font-size: 26px;
   font-weight: 400;
@@ -680,7 +682,7 @@ section {
 .resume .resume-item {
   padding: 0 0 20px 20px;
   margin-top: -2px;
-  border-left: 2px solid #34b7a7;
+  border-left: 2px solid #3487b7;
   position: relative;
 }
 .resume .resume-item h4 {
@@ -698,7 +700,7 @@ section {
   display: inline-block;
   font-weight: 600;
   margin-bottom: 10px;
-  color: #34b7a7;
+  color: #347cb7;
 }
 .resume .resume-item ul {
   padding-left: 20px;
@@ -718,8 +720,10 @@ section {
   left: -9px;
   top: 0;
   background: #fff;
-  border: 2px solid #34b7a7;
+  border: 2px solid #34a3b7;
 }
+
+
 
 /*--------------------------------------------------------------
 # Services
