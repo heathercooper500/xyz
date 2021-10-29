@@ -5,7 +5,7 @@
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
 
-  <title>Resume - Kelly Bootstrap Template</title>
+  <title>Anatomy - Dance Wellness</title>
   <meta content="" name="description">
   <meta content="" name="keywords">
 
@@ -91,7 +91,7 @@
 
     table#your-table-items th:nth-child(1),
     table#your-table-items td:nth-child(1) {
-      width: 35%;
+      width: 30%;
     }
 
     table#your-table-items th:nth-child(2),
@@ -101,12 +101,12 @@
 
     table#your-table-items th:nth-child(3),
     table#your-table-items td:nth-child(3) {
-      width: 20%;
+      width: 30%;
     }
 
     table#your-table-items th:nth-child(4),
     table#your-table-items td:nth-child(4) {
-      width: 15%;
+      width: 30%;
     }
 
     table#your-table-items thead {
@@ -162,6 +162,7 @@
 
 
 <body>
+
   <article>
    
     <div>
@@ -177,7 +178,7 @@
       </div>
 
       <div class="table-responsive">
-        <p><button onclick="mysortTable()">Sorting table data</button></p>
+     
     <table class="table table-bordered" id="sortTable">
       <thead class="table-light">
       <thead>
@@ -191,14 +192,14 @@
       </thead>
       <tbody>
         <tr>
-          <th scope="row">1</th>
+          <td scope="row"> 1</td>
           <td>Patella</td>
           <td>Quadricepts Tendon</td>
           <td>Connects apex of patella to quadricepts tendon</td>
           <td>Patellafemoral Syndrome</td>
         </tr>
         <tr>
-          <th scope="row">2</th>
+          <td scope="row">2</td>
           <td>Knee Joint</td>
           <td>Lateral Femoral Condyle</td>
           <td>Stabilization of the knee</td>
@@ -206,28 +207,28 @@
         </tr>
        
         <tr>
-          <th scope="row">3</th>
+          <td scope="row">3</td>
           <td>Lower Back</td>
           <td>Lumbar</td>
           <td>Support upper body</td>
          <td> Stress Fracture</td>
         </tr>
         <tr>
-          <th scope="row">4</th>
+          <td scope="row">4</td>
           <td>Hip</td>
           <td>Labrum Cartilage</td>
           <td>Supports ball in socket</td>
           <td>Labral Tear</td>
         </tr>
         <tr>
-          <th scope="row">5</th>
+          <td scope="row">5</td>
           <td>Ankle</td>
           <td>Distal end of gastrocnemius</td>
           <td>To push off while walking, running</td>
           <td>Achillis Tendoninitis</td>
         </tr>
         <tr>
-          <th scope="row">6</th>
+          <td scope="row">6</td>
           <td>Knee</td>
           <td>Anterior to tibial attachment</td>
           <td>Shock absorber</td>
@@ -235,7 +236,7 @@
         </tr>
         
         <tr>
-          <th scope="row">7</th>
+          <td scope="row">7</td>
           <td>Hip</td>
           <td>Iliotibial Band</td>
           <td>Movement of thigh</td>
@@ -243,7 +244,7 @@
         </tr>
         
         <tr>
-          <th scope="row">8</th>
+          <td scope="row">8</td>
           <td>Ankle</td>
           <td>Anteriorfibular Ligament</td>
           <td>Stabilizes ankle</td>
@@ -364,7 +365,7 @@
       </div>
     </section>< End Services Section -->
 
-  </main><!-- End #main -->
+ <!-- End #main -->
   <!--<div id="carouselExampleSlidesOnly" class="carousel slide" data-ride="carousel">
     <div class="carousel-inner">
       <div class="carousel-item active">
@@ -527,7 +528,7 @@
       </div>
 
     </div>
-  </section><!-- End Portfolio Section -->
+  </section> End Portfolio Section -->
 
   <!-- ======= Footer ======= -->
   
@@ -546,18 +547,26 @@
   <script src="assets/vendor/waypoints/noframework.waypoints.js"></script>
 
   <!-- Template Main JS File -->
-  <script src="assets/js/main.js"></script>
+  <!--<script src="assets/js/main.js"></script>
 
+ 
+
+  
+  <-!-- jquery.min.js should be loaded before jquery.tablesorter.min.js because tablesorter requires basice jquery -->
+  <script type="text/JavaScript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script type="text/JavaScript"
+    src="https://cdnjs.cloudflare.com/ajax/libs/jquery.tablesorter/2.31.3/js/jquery.tablesorter.min.js"></script>
   <!-- BEG JavaScript -->
   <script>
-    $(document).ready(function() {
-      $("table#courses").tablesorter({
+    $(document).ready(function () {
+      $("table#your-table-items").tablesorter({
         sortList: [[2, 0]],
         CssAsc: "tablesorter-headerAsc",
         CssDesc: "tablesorter-headerDesc"
       });
     });
   </script>
+
   <!-- END JavaScript -->
 </body>
 
