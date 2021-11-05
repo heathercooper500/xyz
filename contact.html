@@ -5,7 +5,7 @@
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
 
-  <title>Contact - Kelly Bootstrap Template</title>
+  <title>Injuries - Dance Wellness</title>
   <meta content="" name="description">
   <meta content="" name="keywords">
 
@@ -33,6 +33,7 @@
   * Author: BootstrapMade.com
   * License: https://bootstrapmade.com/license/
   ======================================================== -->
+ 
 </head>
 
 <body>
@@ -41,28 +42,23 @@
   <header id="header" class="fixed-top">
     <div class="container-fluid d-flex justify-content-between align-items-center">
 
-      <h1 class="logo me-auto me-lg-0"><a href="index.html">Kelly</a></h1>
-      <!-- Uncomment below if you prefer to use an image logo -->
-      <!-- <a href="index.html" class="logo"><img src="assets/img/logo.png" alt="" class="img-fluid"></a>-->
+      <h1 class="logo me-auto me-xlg-0"><a href="index.html">Dance Wellness</a></h1>
+      
+      <a href="index.html" class="logo"><img src="assets/img/logo.png" alt="" class="img-fluid"></a>
 
       <nav id="navbar" class="navbar order-last order-lg-0">
         <ul>
           <li><a href="index.html">Home</a></li>
-          <li><a href="about.html">About</a></li>
-          <li><a href="resume.html">Resume</a></li>
-          <li><a href="services.html">Services</a></li>
-          <li><a href="portfolio.html">Portfolio</a></li>
-          <li><a class="active" href="contact.html">Contact</a></li>
+          <li><a href="about.html">Injuries</a></li>
+          <li><a href="resume.html">Therapy</a></li>
+          <li><a href="services.html">Anatomy</a></li>
+          <li><a href="portfolio.html">Videos</a></li>
+          <li><a class="active" href="contact.html">Healers</a></li>
         </ul>
         <i class="bi bi-list mobile-nav-toggle"></i>
       </nav><!-- .navbar -->
 
-      <div class="header-social-links">
-        <a href="#" class="twitter"><i class="bi bi-twitter"></i></a>
-        <a href="#" class="facebook"><i class="bi bi-facebook"></i></a>
-        <a href="#" class="instagram"><i class="bi bi-instagram"></i></a>
-        <a href="#" class="linkedin"><i class="bi bi-linkedin"></i></i></a>
-      </div>
+      
 
     </div>
 
@@ -71,93 +67,286 @@
   <main id="main">
 
     <!-- ======= Contact Section ======= -->
+    <style>
+      body {
+        font-family: Verdana, sans-serif;
+        margin: 0;
+      }
+      
+      * {
+        box-sizing: border-box;
+      }
+      
+      .row > .column {
+        padding: 0 8px;
+      }
+      
+      .row:after {
+        content: "";
+        display: table;
+        clear: both;
+      }
+      
+      .column {
+        float: left;
+        width: 25%;
+      }
+      
+      /* The Modal (background) */
+      .modal {
+        display: none;
+        position: fixed;
+        z-index: 1;
+        padding-top: 20px;
+        left: 0;
+        top: 10%;
+        width: 100%;
+        height: 230%;
+        overflow: auto;
+        background-color: rgb(68, 128, 177);
+      }
+      
+      /* Modal Content */
+      .modal-content {
+        position: relative;
+        background-color: #fefefe;
+        margin: auto;
+        padding: 0;
+        width: 90%;
+        max-width: 1200px;
+        height: 100;
+      }
+      
+      /* The Close Button */
+      .close {
+        color: white;
+        position: absolute;
+        top: 10px;
+        right: 25px;
+        font-size: 35px;
+        font-weight: bold;
+      }
+      
+      .close:hover,
+      .close:focus {
+        color: #999;
+        text-decoration: none;
+        cursor: pointer;
+      }
+      
+      .mySlides {
+        display: none;
+      }
+      
+      .cursor {
+        cursor: pointer;
+      }
+      
+      /* Next & previous buttons */
+      .prev,
+      .next {
+        cursor: pointer;
+        position: absolute;
+        top: 50%;
+        width: auto;
+        padding: 16px;
+        margin-top: -50px;
+        color: white;
+        font-weight: bold;
+        font-size: 20px;
+        transition: 0.6s ease;
+        border-radius: 0 3px 3px 0;
+        user-select: none;
+        -webkit-user-select: none;
+      }
+      
+      /* Position the "next button" to the right */
+      .next {
+        right: 0;
+        border-radius: 3px 0 0 3px;
+      }
+      
+      /* On hover, add a black background color with a little bit see-through */
+      .prev:hover,
+      .next:hover {
+        background-color: rgb(68, 128, 177);
+      }
+      
+      /* Number text (1/3 etc) */
+      .numbertext {
+        color: #f2f2f2;
+        font-size: 12px;
+        padding: 8px 12px;
+        position: absolute;
+        top: 0;
+      }
+      
+      img {
+        margin-bottom: -4px;
+      }
+      
+      .caption-container {
+        text-align: center;
+        background-color: rrgb(68, 128, 177);
+        padding: 2px 16px;
+        color: white;
+      }
+      
+      .demo {
+        opacity: 0.6;
+      }
+      
+      .active,
+      .demo:hover {
+        opacity: 1;
+      }
+      .close cursor{
+        color:black
+      }
+      img.hover-shadow {
+        transition: 0.3s;
+      }
+      
+      .hover-shadow:hover {
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+      }
+      </style>
     <section id="contact" class="contact">
       <div class="container" data-aos="fade-up">
 
         <div class="section-title">
-          <h2>Contact</h2>
-          <p>Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sint consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea. Quia fugiat sit in iste officiis commodi quidem hic quas.</p>
+          <h2 style="color:#0c5f8f;"></h2style>Healers</h2>
+          <p> Some of the top healers for dance in the United States.</p>
         </div>
 
-        <div>
-          <iframe style="border:0; width: 100%; height: 270px;" src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d12097.433213460943!2d-74.0062269!3d40.7101282!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xb89d1fe6bc499443!2sDowntown+Conference+Center!5e0!3m2!1smk!2sbg!4v1539943755621" frameborder="0" allowfullscreen></iframe>
-        </div>
+        <!-- Images used to open the lightbox -->
+<div class="row">
+  <div class="column">
+    <img src="img/Dr Woodard XX-Small.jpg" onclick="openModal();currentSlide(1)" class="hover-shadow">
+  </div>
+  <div class="column">
+    <img src="img/Dr Tompson XX-small.jpg" onclick="openModal();currentSlide(2)" class="hover-shadow">
+  </div>
+  <div class="column">
+    <img src="img/Dr Hsu XX-Small.jpg" onclick="openModal();currentSlide(3)" class="hover-shadow">
+  </div>
+ 
+   <div class="column">
+    <img src="img/Dr Barrett XX-Small.jpg" onclick="openModal();currentSlide(4)" class="hover-shadow">
+  </div>
+  <div class="column">
+    <img src="img/Dr Anand XX-Small.jpg" onclick="openModal();currentSlide(5)" class="hover-shadow">
+  </div>
+  <div class="column">
+    <img src="img/Dr Bass XX-Small.jpg" onclick="openModal();currentSlide(6)" class="hover-shadow">
+  </div>
+  <div class="column">
+    <img src="img/Dr Harris XX-Small.jpg" onclick="openModal();currentSlide(7)" class="hover-shadow">
+  </div>
+  <div class="column">
+    <img src="img/Dr Huang XX-Small.jpg" onclick="openModal();currentSlide(8)" class="hover-shadow">
+  </div>
+</div>
+</div>
 
-        <div class="row mt-5">
+<!-- The Modal/Lightbox -->
+<div id="myModal" class="modal">
+  <span class="close cursor" onclick="closeModal()">&times;</span>
+  <div class="modal-content">
 
-          <div class="col-lg-4">
-            <div class="info">
-              <div class="address">
-                <i class="bi bi-geo-alt"></i>
-                <h4>Location:</h4>
-                <p>A108 Adam Street, New York, NY 535022</p>
-              </div>
-
-              <div class="email">
-                <i class="bi bi-envelope"></i>
-                <h4>Email:</h4>
-                <p>info@example.com</p>
-              </div>
-
-              <div class="phone">
-                <i class="bi bi-phone"></i>
-                <h4>Call:</h4>
-                <p>+1 5589 55488 55s</p>
-              </div>
-
-            </div>
-
-          </div>
-
-          <div class="col-lg-8 mt-5 mt-lg-0">
-
-            <form action="forms/contact.php" method="post" role="form" class="php-email-form">
-              <div class="row">
-                <div class="col-md-6 form-group">
-                  <input type="text" name="name" class="form-control" id="name" placeholder="Your Name" required>
-                </div>
-                <div class="col-md-6 form-group mt-3 mt-md-0">
-                  <input type="email" class="form-control" name="email" id="email" placeholder="Your Email" required>
-                </div>
-              </div>
-              <div class="form-group mt-3">
-                <input type="text" class="form-control" name="subject" id="subject" placeholder="Subject" required>
-              </div>
-              <div class="form-group mt-3">
-                <textarea class="form-control" name="message" rows="5" placeholder="Message" required></textarea>
-              </div>
-              <div class="my-3">
-                <div class="loading">Loading</div>
-                <div class="error-message"></div>
-                <div class="sent-message">Your message has been sent. Thank you!</div>
-              </div>
-              <div class="text-center"><button type="submit">Send Message</button></div>
-            </form>
-
-          </div>
-
-        </div>
-
-      </div>
-    </section><!-- End Contact Section -->
-
-  </main><!-- End #main -->
-
-  <!-- ======= Footer ======= -->
-  <footer id="footer">
-    <div class="container">
-      <div class="copyright">
-        &copy; Copyright <strong><span>Kelly</span></strong>. All Rights Reserved
-      </div>
-      <div class="credits">
-        <!-- All the links in the footer should remain intact. -->
-        <!-- You can delete the links only if you purchased the pro version. -->
-        <!-- Licensing information: https://bootstrapmade.com/license/ -->
-        <!-- Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/kelly-free-bootstrap-cv-resume-html-template/ -->
-        Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a>
-      </div>
+    <div class="mySlides">
+      <div class="numbertext">1 / 8</div>
+      <img src="img/Dr Woodard Big.jpg" style="width:100%">
     </div>
-  </footer><!-- End  Footer -->
+
+    <div class="mySlides">
+      <div class="numbertext">2 / 8</div>
+      <img src="img/Dr Tompson Big.jpg" style="width:100%">
+    </div>
+
+    <div class="mySlides">
+      <div class="numbertext">3 / 8</div>
+      <img src="img/Dr Hsu Big.jpg" style="width:100%">
+    </div>
+
+    <div class="mySlides">
+      <div class="numbertext">4 / 8</div>
+      <img src="img/Dr Barrett Big.jpg" style="width:100%">
+    </div>
+
+    <div class="mySlides">
+      <div class="numbertext">5/8</div>
+      <img src="img/Dr Anand Big.jpg" style="width:100%">
+    </div>
+
+    <div class="mySlides">
+      <div class="numbertext">6 / 8</div>
+      <img src="img/Dr Bass Big.jpg" style="width:100%">
+    </div>
+
+    <div class="mySlides">
+      <div class="numbertext">7 / 8</div>
+      <img src="img/Dr Harris Big.jpg" style="width:100%">
+    </div>
+
+    <div class="mySlides">
+      <div class="numbertext">8 / 8</div>
+      <img src="img/Dr Huang Big.jpg" style="width:100%">
+    </div>
+    <!-- Next/previous controls -->
+    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+    <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+    <!-- Caption text -->
+    <div class="caption-container">
+      <p id="caption"></p>
+    </div>
+
+   
+  </div>
+</div> 
+<br>
+<br>
+<br>
+<div class="section-title"> 
+  
+<p> Dr. Laura Woodard, Doctor of Osteopathy, Berkely CA,</p>
+<br>
+<p> Dr. Rod Thompson, Doctor of Chiropractic, San Francisco, CA.</p>
+<br>
+<p>Dr. Jason Hsu, Tui Na, San Diego, CA.</p>
+<br>
+<p> Dr. Linda Barrett, Cranial Sacral, New York City, NY</p>
+<br>
+<p>Dr. Amar Anand, Doctor of Osteopathy, Chicago, IL</p>
+<br>
+<p> Katherine Bass, Deep Tissue and Sports Massage, New York City, NY </p>
+<br>
+<p>Dr. Sue Harris, Cranial Sacral, San Francisco, CA </p>
+<br>
+<p> Dr. Diana Huang, Accupuncture, Newark, NJ</p>
+</div>
+
+<style>
+  .footer {
+     position: fixed;
+     left: 0;
+     bottom: 0;
+     width: 100%;
+     background-color: rgb(243, 243, 243);
+     color: rgb(22, 21, 21);
+     text-align: center;
+  }
+  </style>
+  </head>
+  <body>
+  
+  <!-- <h2>Fixed/Sticky Footer Example</h2> -->
+  <!-- <p>The footer is placed at the bottom of the page.</p> -->
+  
+  <div class="footer">
+    <img src="img/Logo.png" alt="Trulli" width="30" height="25">
+  </div>
 
   <div id="preloader"></div>
   <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
@@ -174,7 +363,48 @@
 
   <!-- Template Main JS File -->
   <script src="assets/js/main.js"></script>
-
+  <script>
+    // Open the Modal
+    function openModal() {
+      document.getElementById("myModal").style.display = "block";
+    }
+    
+    // Close the Modal
+    function closeModal() {
+      document.getElementById("myModal").style.display = "none";
+    }
+    
+    var slideIndex = 1;
+    showSlides(slideIndex);
+    
+    // Next/previous controls
+    function plusSlides(n) {
+      showSlides(slideIndex += n);
+    }
+    
+    // Thumbnail image controls
+    function currentSlide(n) {
+      showSlides(slideIndex = n);
+    }
+    
+    function showSlides(n) {
+      var i;
+      var slides = document.getElementsByClassName("mySlides");
+      var dots = document.getElementsByClassName("demo");
+      var captionText = document.getElementById("caption");
+      if (n > slides.length) {slideIndex = 1}
+      if (n < 1) {slideIndex = slides.length}
+      for (i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";
+      }
+      for (i = 0; i < dots.length; i++) {
+        dots[i].className = dots[i].className.replace(" active", "");
+      }
+      slides[slideIndex-1].style.display = "block";
+      dots[slideIndex-1].className += " active";
+      captionText.innerHTML = dots[slideIndex-1].alt;
+    }
+    </script>
 </body>
 
 </html>

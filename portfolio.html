@@ -79,8 +79,25 @@
   </header><!-- End Header -->
 
   <main id="main">
+
+    <section id="portfolio" class="portfolio">
+      <div class="container" data-aos="fade-up">
+
+        <div class="section-title">
+          <h2 style="color:#0c5f8f;"></h2style>Videos</h2>
     
-    <!-- 
+   
+
+    <iframe width="560" height="315"  src="https://www.youtube.com/embed/rDVGcEax2e0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+    <br>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/Lp-jtfZeXKk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<br>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/A0uVH62QPXo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<br>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/KIUv6HqJelk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>    
+
+<!-- 
     <div id="carouselExampleSlidesOnly" class="carousel slide" data-ride="carousel">
       <div class="carousel-inner">
         <div class="carousel-item active">
@@ -249,23 +266,110 @@
   </main><!-- End #main -->
 
   <!-- ======= Footer ======= -->
-  <footer id="footer">
-    <div class="container">
-      <div class="copyright">
-        &copy; Copyright <strong><span>Kelly</span></strong>. All Rights Reserved
-      </div>
-      <div class="credits">
-        <!-- All the links in the footer should remain intact. -->
-        <!-- You can delete the links only if you purchased the pro version. -->
-        <!-- Licensing information: https://bootstrapmade.com/license/ -->
-        <!-- Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/kelly-free-bootstrap-cv-resume-html-template/ -->
-        Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a>
-      </div>
-    </div>
-  </footer><!-- End  Footer -->
+  <style>
+    .accordion {
+      background-color: #eee;
+      color: #444;
+      cursor: pointer;
+      padding: 30px;
+      width: 100%;
+      border: none;
+      text-align: left;
+      outline: none;
+      font-size: 15px;
+      transition: 0.4s;
+    }
+    
+    .active, .accordion:hover {
+      background-color: #ccc; 
+    }
+    
+    .panel {
+      padding: 0 18px;
+      display: none;
+      background-color: white;
+      overflow: hidden;
+    }
+    .accordion:after {
+  content: '\02795'; /* Unicode character for "plus" sign (+) */
+  font-size: 13px;
+  color: #777;
+  float: right;
+  margin-left: 5px;
+}
 
-  <div id="preloader"></div>
-  <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+    </style>
+    </head>
+    <body>
+    
+      <h2 style="color:#0c5f8f;"></h2style>About the Videos</h2>
+    
+    <button class="accordion">Physical Therapy for Dancers</button>
+    <div class="panel">
+      <p>Physical therapy is a necessity for those who rely on their bodies for work. Dancers specifically need to be in their best shape at all times. See how physical therapy helps maintain their bodies to be performance ready week after week.</p>
+    </div>
+    
+    <button class="accordion">Flexibility</button>
+    <div class="panel">
+      <p>Good flexibility allows the joints to improve their range of motion. For example, flexibility in the shoulder musculature allows a swimmer to ‘glide’ the arm through the water using shoulder elevation. This allows the joints to easily accommodate the desired joint angles without undue stress on the tissues around them. It therefore is essential for injury prevention.</p>
+    </div>
+    
+    <button class="accordion">The Royal Ballet Physical Therapy</button>
+    <div class="panel">
+      <p>State-of-the-art facilities and techniques used by Premier League footballers ensure that Royal Ballet dancers have long and successful careers. Full facilities and supplies are present to help support dancers 'training, injury prevention, and injury recovery.</p>
+    </div>
+    
+    <button class="accordion">Dancer's Hip</button>
+    <div class="panel">
+      <p>Dancer’s hip, also known as snapping hip, is a condition characterized by a snapping sensation caused by motion of muscles and tendons over bony structures around the hip joint. It is often seen in young athletes such as dancers.</p>
+
+
+
+      </div>
+   
+    <script>
+    var acc = document.getElementsByClassName("accordion");
+    var i;
+    
+    for (i = 0; i < acc.length; i++) {
+      acc[i].addEventListener("click", function() {
+        this.classList.toggle("active");
+        var panel = this.nextElementSibling;
+        if (panel.style.display === "block") {
+          panel.style.display = "none";
+        } else {
+          panel.style.display = "block";
+        }
+      });
+    }
+    </script>
+   
+
+    <!-- <style> -->
+      <!-- .footer { -->
+         <!-- position: fixed; -->
+         <!-- left: 0; -->
+         <!-- bottom: 0; -->
+         <!-- width: 100%; -->
+         <!-- background-color: rgb(243, 243, 243); -->
+         <!-- color: rgb(22, 21, 21); -->
+         <!-- text-align: center; -->
+      <!-- } -->
+      <!-- </style> -->
+      <!-- </head> -->
+      <!-- <body> -->
+      
+      <!-- <h2>Fixed/Sticky Footer Example</h2> -->
+      <!-- <p>The footer is placed at the bottom of the page.</p> -->
+      
+
+      <!-- <div class="footer"> -->
+        <!-- <img src="img/Logo.png" alt="Trulli" width="30" height="25"> -->
+      <!-- </div> -->
+
+  <!-- <div id="preloader"></div> -->
+  <!-- <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a> -->
 
   <!-- Vendor JS Files -->
   <script src="assets/vendor/aos/aos.js"></script>
